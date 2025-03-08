@@ -1,0 +1,567 @@
+{
+  "tasks": [
+    {
+      "id": "task-20250308-001",
+      "name": "Daily Email Processing",
+      "description": "Automatically categorize and respond to routine emails",
+      "status": "active",
+      "schedule": {
+        "frequency": "daily",
+        "startTime": "08:00",
+        "lastRun": "2025-03-08T08:00:12Z",
+        "nextRun": "2025-03-09T08:00:00Z"
+      },
+      "statistics": {
+        "averageDuration": 342,
+        "totalRuns": 87,
+        "successRate": 99.2,
+        "emailsProcessed": 1243,
+        "responsesGenerated": 618
+      },
+      "actions": [
+        "takeScreenshot",
+        "findElement",
+        "interactWithElement",
+        "typeText",
+        "pressKey"
+      ],
+      "priority": "high",
+      "lastModified": "2025-02-21T14:23:15Z",
+      "createdBy": "admin"
+    },
+    {
+      "id": "task-20250308-002",
+      "name": "Invoice Data Extraction",
+      "description": "Extract data from invoices and enter into accounting system",
+      "status": "active",
+      "schedule": {
+        "frequency": "weekly",
+        "startTime": "10:00",
+        "day": "Monday",
+        "lastRun": "2025-03-04T10:00:34Z",
+        "nextRun": "2025-03-11T10:00:00Z"
+      },
+      "statistics": {
+        "averageDuration": 1245,
+        "totalRuns": 24,
+        "successRate": 97.8,
+        "invoicesProcessed": 312,
+        "dataAccuracy": 99.4
+      },
+      "actions": [
+        "takeScreenshot",
+        "analyzeScreen",
+        "findElement",
+        "interactWithElement",
+        "typeText",
+        "recordPattern"
+      ],
+      "priority": "medium",
+      "lastModified": "2025-03-01T09:12:45Z",
+      "createdBy": "finance"
+    },
+    {
+      "id": "task-20250308-003",
+      "name": "Social Media Publishing",
+      "description": "Schedule and publish content across social media platforms",
+      "status": "active",
+      "schedule": {
+        "frequency": "daily",
+        "startTime": "14:00",
+        "lastRun": "2025-03-08T14:00:03Z",
+        "nextRun": "2025-03-09T14:00:00Z"
+      },
+      "statistics": {
+        "averageDuration": 879,
+        "totalRuns": 62,
+        "successRate": 98.4,
+        "postsPublished": 186,
+        "engagementRate": 4.2
+      },
+      "actions": [
+        "findElement",
+        "typeText",
+        "interactWithElement",
+        "uploadFile",
+        "pressKey"
+      ],
+      "priority": "high",
+      "lastModified": "2025-03-05T11:34:27Z",
+      "createdBy": "marketing"
+    },
+    {
+      "id": "task-20250308-004",
+      "name": "CRM Data Update",
+      "description": "Update customer records with latest information",
+      "status": "active",
+      "schedule": {
+        "frequency": "daily",
+        "startTime": "01:00",
+        "lastRun": "2025-03-08T01:00:54Z",
+        "nextRun": "2025-03-09T01:00:00Z"
+      },
+      "statistics": {
+        "averageDuration": 2145,
+        "totalRuns": 92,
+        "successRate": 99.7,
+        "recordsUpdated": 4821,
+        "dataQualityScore": 98.3
+      },
+      "actions": [
+        "findElement",
+        "typeText",
+        "interactWithElement",
+        "scrollMouse",
+        "pressKey"
+      ],
+      "priority": "medium",
+      "lastModified": "2025-02-28T16:45:12Z",
+      "createdBy": "sales"
+    },
+    {
+      "id": "task-20250308-005",
+      "name": "Website Monitoring",
+      "description": "Monitor website performance and functionality",
+      "status": "active",
+      "schedule": {
+        "frequency": "hourly",
+        "lastRun": "2025-03-08T15:00:23Z",
+        "nextRun": "2025-03-08T16:00:00Z"
+      },
+      "statistics": {
+        "averageDuration": 187,
+        "totalRuns": 1248,
+        "successRate": 99.9,
+        "alertsGenerated": 17,
+        "issuesFixed": 12
+      },
+      "actions": [
+        "takeScreenshot",
+        "findElement",
+        "getSystemInfo",
+        "sendNotification"
+      ],
+      "priority": "high",
+      "lastModified": "2025-03-02T19:23:08Z",
+      "createdBy": "devops"
+    },
+    {
+      "id": "task-20250308-006",
+      "name": "Expense Report Processing",
+      "description": "Approve and process employee expense reports",
+      "status": "active",
+      "schedule": {
+        "frequency": "weekly",
+        "startTime": "09:30",
+        "day": "Friday",
+        "lastRun": "2025-03-08T09:30:18Z",
+        "nextRun": "2025-03-15T09:30:00Z"
+      },
+      "statistics": {
+        "averageDuration": 1783,
+        "totalRuns": 37,
+        "successRate": 96.8,
+        "reportsProcessed": 241,
+        "totalApproved": 226
+      },
+      "actions": [
+        "takeScreenshot",
+        "findElement",
+        "interactWithElement",
+        "scrollMouse",
+        "pressKey"
+      ],
+      "priority": "medium",
+      "lastModified": "2025-03-01T12:34:45Z",
+      "createdBy": "finance"
+    },
+    {
+      "id": "task-20250308-007",
+      "name": "Inventory Status Update",
+      "description": "Update inventory status across multiple systems",
+      "status": "active",
+      "schedule": {
+        "frequency": "daily",
+        "startTime": "22:00",
+        "lastRun": "2025-03-07T22:00:09Z",
+        "nextRun": "2025-03-08T22:00:00Z"
+      },
+      "statistics": {
+        "averageDuration": 1345,
+        "totalRuns": 142,
+        "successRate": 98.4,
+        "itemsUpdated": 8742,
+        "discrepanciesFound": 23
+      },
+      "actions": [
+        "findElement",
+        "interactWithElement",
+        "typeText",
+        "pressKey",
+        "scrollMouse"
+      ],
+      "priority": "high",
+      "lastModified": "2025-02-15T08:12:37Z",
+      "createdBy": "inventory"
+    },
+    {
+      "id": "task-20250308-008",
+      "name": "Customer Support Ticket Triage",
+      "description": "Categorize and prioritize incoming support tickets",
+      "status": "active",
+      "schedule": {
+        "frequency": "hourly",
+        "lastRun": "2025-03-08T15:00:45Z",
+        "nextRun": "2025-03-08T16:00:00Z"
+      },
+      "statistics": {
+        "averageDuration": 423,
+        "totalRuns": 987,
+        "successRate": 99.1,
+        "ticketsProcessed": 3421,
+        "averageResponseTime": 14.2
+      },
+      "actions": [
+        "takeScreenshot",
+        "findElement",
+        "interactWithElement",
+        "typeText",
+        "pressKey"
+      ],
+      "priority": "high",
+      "lastModified": "2025-03-03T10:12:37Z",
+      "createdBy": "support"
+    },
+    {
+      "id": "task-20250308-009",
+      "name": "Data Backup Verification",
+      "description": "Verify daily data backups across all systems",
+      "status": "active",
+      "schedule": {
+        "frequency": "daily",
+        "startTime": "03:00",
+        "lastRun": "2025-03-08T03:00:27Z",
+        "nextRun": "2025-03-09T03:00:00Z"
+      },
+      "statistics": {
+        "averageDuration": 1843,
+        "totalRuns": 62,
+        "successRate": 100,
+        "dataVerified": "12.4TB",
+        "errorDetections": 0
+      },
+      "actions": [
+        "getSystemInfo",
+        "findElement",
+        "interactWithElement",
+        "scrollMouse",
+        "sendNotification"
+      ],
+      "priority": "critical",
+      "lastModified": "2025-02-01T16:54:32Z",
+      "createdBy": "sysadmin"
+    },
+    {
+      "id": "task-20250308-010",
+      "name": "Compliance Report Generation",
+      "description": "Generate weekly compliance reports for regulatory requirements",
+      "status": "active",
+      "schedule": {
+        "frequency": "weekly",
+        "startTime": "07:00",
+        "day": "Monday",
+        "lastRun": "2025-03-04T07:00:18Z",
+        "nextRun": "2025-03-11T07:00:00Z"
+      },
+      "statistics": {
+        "averageDuration": 2754,
+        "totalRuns": 48,
+        "successRate": 99.8,
+        "reportsGenerated": 48,
+        "complianceScore": 98.9
+      },
+      "actions": [
+        "findElement",
+        "interactWithElement",
+        "typeText",
+        "pressKey",
+        "scrollMouse"
+      ],
+      "priority": "high",
+      "lastModified": "2025-01-15T11:23:42Z",
+      "createdBy": "compliance"
+    },
+    {
+      "id": "task-20250308-011",
+      "name": "Software Updates Deployment",
+      "description": "Deploy software updates to development environments",
+      "status": "active",
+      "schedule": {
+        "frequency": "weekly",
+        "startTime": "21:00",
+        "day": "Wednesday",
+        "lastRun": "2025-03-06T21:00:57Z",
+        "nextRun": "2025-03-13T21:00:00Z"
+      },
+      "statistics": {
+        "averageDuration": 3245,
+        "totalRuns": 32,
+        "successRate": 96.9,
+        "updatesDeployed": 124,
+        "rollbacks": 4
+      },
+      "actions": [
+        "findElement",
+        "interactWithElement",
+        "typeText",
+        "pressKey",
+        "sendNotification"
+      ],
+      "priority": "medium",
+      "lastModified": "2025-02-28T14:45:18Z",
+      "createdBy": "devops"
+    },
+    {
+      "id": "task-20250308-012",
+      "name": "Employee Onboarding Automation",
+      "description": "Process new employee onboarding workflows",
+      "status": "active",
+      "schedule": {
+        "frequency": "daily",
+        "startTime": "09:00",
+        "lastRun": "2025-03-08T09:00:34Z",
+        "nextRun": "2025-03-09T09:00:00Z"
+      },
+      "statistics": {
+        "averageDuration": 1876,
+        "totalRuns": 37,
+        "successRate": 98.2,
+        "employeesProcessed": 42,
+        "averageCompletionTime": "2.4 hours"
+      },
+      "actions": [
+        "takeScreenshot",
+        "findElement",
+        "interactWithElement",
+        "typeText",
+        "pressKey",
+        "sendNotification"
+      ],
+      "priority": "medium",
+      "lastModified": "2025-03-01T15:34:12Z",
+      "createdBy": "hr"
+    },
+    {
+      "id": "task-20250308-013",
+      "name": "Job Application Screening",
+      "description": "Preliminary screening of job applications",
+      "status": "active",
+      "schedule": {
+        "frequency": "daily",
+        "startTime": "18:00",
+        "lastRun": "2025-03-07T18:00:23Z",
+        "nextRun": "2025-03-08T18:00:00Z"
+      },
+      "statistics": {
+        "averageDuration": 2431,
+        "totalRuns": 45,
+        "successRate": 97.8,
+        "applicationsScreened": 723,
+        "qualifiedCandidates": 187
+      },
+      "actions": [
+        "takeScreenshot",
+        "findElement",
+        "interactWithElement",
+        "scrollMouse",
+        "pressKey"
+      ],
+      "priority": "medium",
+      "lastModified": "2025-02-14T11:12:54Z",
+      "createdBy": "hr"
+    },
+    {
+      "id": "task-20250308-014",
+      "name": "Security Alert Monitoring",
+      "description": "Monitor and triage security alerts",
+      "status": "active",
+      "schedule": {
+        "frequency": "hourly",
+        "lastRun": "2025-03-08T15:00:12Z",
+        "nextRun": "2025-03-08T16:00:00Z"
+      },
+      "statistics": {
+        "averageDuration": 276,
+        "totalRuns": 1642,
+        "successRate": 99.99,
+        "alertsProcessed": 3842,
+        "criticalAlertsDetected": 17
+      },
+      "actions": [
+        "getSystemInfo",
+        "findElement",
+        "interactWithElement",
+        "sendNotification"
+      ],
+      "priority": "critical",
+      "lastModified": "2025-01-05T08:23:45Z",
+      "createdBy": "security"
+    },
+    {
+      "id": "task-20250308-015",
+      "name": "Sales Data Reporting",
+      "description": "Generate and distribute daily sales reports",
+      "status": "active",
+      "schedule": {
+        "frequency": "daily",
+        "startTime": "05:30",
+        "lastRun": "2025-03-08T05:30:47Z",
+        "nextRun": "2025-03-09T05:30:00Z"
+      },
+      "statistics": {
+        "averageDuration": 1254,
+        "totalRuns": 87,
+        "successRate": 99.3,
+        "reportsGenerated": 87,
+        "totalSalesProcessed": "$12.4M"
+      },
+      "actions": [
+        "findElement",
+        "interactWithElement",
+        "pressKey",
+        "scrollMouse",
+        "recordPattern"
+      ],
+      "priority": "high",
+      "lastModified": "2025-02-18T14:23:11Z",
+      "createdBy": "sales"
+    }
+  ],
+  "completedTasks": [
+    {
+      "id": "task-20250307-001",
+      "name": "Monthly Financial Reporting",
+      "description": "Generate end-of-month financial reports",
+      "status": "completed",
+      "completedAt": "2025-03-01T09:45:23Z",
+      "statistics": {
+        "duration": 3425,
+        "reportsGenerated": 12,
+        "dataProcessed": "1.2GB"
+      },
+      "priority": "critical",
+      "createdBy": "finance"
+    },
+    {
+      "id": "task-20250307-002",
+      "name": "Website Content Update",
+      "description": "Update product information on website",
+      "status": "completed",
+      "completedAt": "2025-03-07T14:23:11Z",
+      "statistics": {
+        "duration": 1873,
+        "pagesUpdated": 34,
+        "imagesProcessed": 128
+      },
+      "priority": "high",
+      "createdBy": "marketing"
+    },
+    {
+      "id": "task-20250307-003",
+      "name": "Data Migration Validation",
+      "description": "Validate data integrity after migration",
+      "status": "completed",
+      "completedAt": "2025-03-05T18:12:45Z",
+      "statistics": {
+        "duration": 4532,
+        "recordsValidated": 1245678,
+        "discrepanciesFound": 23
+      },
+      "priority": "critical",
+      "createdBy": "data"
+    },
+    {
+      "id": "task-20250307-004",
+      "name": "Employee Performance Report",
+      "description": "Generate quarterly performance reports",
+      "status": "completed",
+      "completedAt": "2025-03-01T12:34:56Z",
+      "statistics": {
+        "duration": 2854,
+        "employeesReviewed": 127,
+        "reportsGenerated": 8
+      },
+      "priority": "medium",
+      "createdBy": "hr"
+    },
+    {
+      "id": "task-20250307-005",
+      "name": "System Patches Deployment",
+      "description": "Deploy security patches to production",
+      "status": "completed",
+      "completedAt": "2025-03-03T02:34:12Z",
+      "statistics": {
+        "duration": 5423,
+        "patchesDeployed": 17,
+        "systemsUpdated": 124
+      },
+      "priority": "critical",
+      "createdBy": "sysadmin"
+    }
+  ],
+  "failedTasks": [
+    {
+      "id": "task-20250307-101",
+      "name": "Customer Data Import",
+      "description": "Import new customer data into CRM",
+      "status": "failed",
+      "failedAt": "2025-03-07T15:45:23Z",
+      "error": {
+        "code": "DATA_FORMAT_ERROR",
+        "message": "Invalid CSV format in import file",
+        "details": "Column 'customer_id' missing in import file"
+      },
+      "priority": "high",
+      "createdBy": "sales"
+    },
+    {
+      "id": "task-20250307-102",
+      "name": "Social Media Analytics",
+      "description": "Generate social media performance analytics",
+      "status": "failed",
+      "failedAt": "2025-03-06T11:23:45Z",
+      "error": {
+        "code": "API_AUTH_ERROR",
+        "message": "API authentication failed",
+        "details": "API key expired or invalid"
+      },
+      "priority": "medium",
+      "createdBy": "marketing"
+    },
+    {
+      "id": "task-20250307-103",
+      "name": "Server Capacity Planning",
+      "description": "Generate capacity planning report",
+      "status": "failed",
+      "failedAt": "2025-03-05T16:12:34Z",
+      "error": {
+        "code": "RESOURCE_UNAVAILABLE",
+        "message": "Unable to access monitoring data",
+        "details": "Monitoring service unavailable during execution"
+      },
+      "priority": "high",
+      "createdBy": "devops"
+    }
+  ],
+  "summary": {
+    "totalActiveTasks": 15,
+    "totalCompletedTasks": 5,
+    "totalFailedTasks": 3,
+    "todayScheduledTasks": 8,
+    "currentRunningTasks": 0,
+    "overallSuccessRate": 97.8,
+    "averageCompletionTime": 1854,
+    "mostActiveUser": "sysadmin",
+    "lastUpdated": "2025-03-08T15:32:47Z"
+  }
+}
