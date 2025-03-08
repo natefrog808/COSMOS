@@ -1,0 +1,30 @@
+{
+  "name": "cosmos-agent",
+  "version": "1.0.0-alpha",
+  "description": "Comprehensive Operational System for Machine-Orchestrated Synthesis",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "^0.3.0",
+    "@daydreamsai/core": "^0.1.0",
+    "active-win": "^8.1.0",
+    "node-fetch": "^3.3.2",
+    "node-notifier": "^10.0.1",
+    "opencv4nodejs": "^5.6.0",
+    "robotjs": "^0.6.0",
+    "screenshot-desktop": "^1.15.0",
+    "tesseract.js": "^4.1.1",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "dotenv": "^16.3.1",
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT"
+}
