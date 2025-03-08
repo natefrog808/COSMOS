@@ -1,0 +1,90 @@
+{
+  "systemMetrics": {
+    "cpu": {
+      "model": "Intel Core i9-12900K",
+      "cores": 16,
+      "threads": 24,
+      "baseFrequency": "3.2 GHz",
+      "boostFrequency": "5.2 GHz",
+      "usage": [
+        {"timestamp": "2025-03-08T10:00:00Z", "value": 15},
+        {"timestamp": "2025-03-08T10:05:00Z", "value": 22},
+        {"timestamp": "2025-03-08T10:10:00Z", "value": 18},
+        {"timestamp": "2025-03-08T10:15:00Z", "value": 24},
+        {"timestamp": "2025-03-08T10:20:00Z", "value": 20},
+        {"timestamp": "2025-03-08T10:25:00Z", "value": 16},
+        {"timestamp": "2025-03-08T10:30:00Z", "value": 24}
+      ],
+      "temperature": [
+        {"timestamp": "2025-03-08T10:00:00Z", "value": 45},
+        {"timestamp": "2025-03-08T10:05:00Z", "value": 48},
+        {"timestamp": "2025-03-08T10:10:00Z", "value": 47},
+        {"timestamp": "2025-03-08T10:15:00Z", "value": 51},
+        {"timestamp": "2025-03-08T10:20:00Z", "value": 50},
+        {"timestamp": "2025-03-08T10:25:00Z", "value": 46},
+        {"timestamp": "2025-03-08T10:30:00Z", "value": 49}
+      ]
+    },
+    "memory": {
+      "total": 32,
+      "used": [
+        {"timestamp": "2025-03-08T10:00:00Z", "value": 8.0},
+        {"timestamp": "2025-03-08T10:05:00Z", "value": 9.6},
+        {"timestamp": "2025-03-08T10:10:00Z", "value": 9.0},
+        {"timestamp": "2025-03-08T10:15:00Z", "value": 11.2},
+        {"timestamp": "2025-03-08T10:20:00Z", "value": 10.2},
+        {"timestamp": "2025-03-08T10:25:00Z", "value": 9.0},
+        {"timestamp": "2025-03-08T10:30:00Z", "value": 6.7}
+      ],
+      "percentUsed": [
+        {"timestamp": "2025-03-08T10:00:00Z", "value": 25.0},
+        {"timestamp": "2025-03-08T10:05:00Z", "value": 30.0},
+        {"timestamp": "2025-03-08T10:10:00Z", "value": 28.1},
+        {"timestamp": "2025-03-08T10:15:00Z", "value": 35.0},
+        {"timestamp": "2025-03-08T10:20:00Z", "value": 31.9},
+        {"timestamp": "2025-03-08T10:25:00Z", "value": 28.1},
+        {"timestamp": "2025-03-08T10:30:00Z", "value": 20.9}
+      ]
+    },
+    "network": {
+      "download": [
+        {"timestamp": "2025-03-08T10:00:00Z", "value": 2.5},
+        {"timestamp": "2025-03-08T10:05:00Z", "value": 3.2},
+        {"timestamp": "2025-03-08T10:10:00Z", "value": 1.8},
+        {"timestamp": "2025-03-08T10:15:00Z", "value": 4.1},
+        {"timestamp": "2025-03-08T10:20:00Z", "value": 2.9},
+        {"timestamp": "2025-03-08T10:25:00Z", "value": 1.5},
+        {"timestamp": "2025-03-08T10:30:00Z", "value": 3.0}
+      ],
+      "upload": [
+        {"timestamp": "2025-03-08T10:00:00Z", "value": 0.7},
+        {"timestamp": "2025-03-08T10:05:00Z", "value": 1.2},
+        {"timestamp": "2025-03-08T10:10:00Z", "value": 0.5},
+        {"timestamp": "2025-03-08T10:15:00Z", "value": 1.8},
+        {"timestamp": "2025-03-08T10:20:00Z", "value": 1.2},
+        {"timestamp": "2025-03-08T10:25:00Z", "value": 0.4},
+        {"timestamp": "2025-03-08T10:30:00Z", "value": 0.9}
+      ]
+    },
+    "diskActivity": {
+      "read": [
+        {"timestamp": "2025-03-08T10:00:00Z", "value": 12.5},
+        {"timestamp": "2025-03-08T10:05:00Z", "value": 8.7},
+        {"timestamp": "2025-03-08T10:10:00Z", "value": 5.2},
+        {"timestamp": "2025-03-08T10:15:00Z", "value": 20.1},
+        {"timestamp": "2025-03-08T10:20:00Z", "value": 15.8},
+        {"timestamp": "2025-03-08T10:25:00Z", "value": 7.3},
+        {"timestamp": "2025-03-08T10:30:00Z", "value": 9.5}
+      ],
+      "write": [
+        {"timestamp": "2025-03-08T10:00:00Z", "value": 5.2},
+        {"timestamp": "2025-03-08T10:05:00Z", "value": 4.1},
+        {"timestamp": "2025-03-08T10:10:00Z", "value": 2.8},
+        {"timestamp": "2025-03-08T10:15:00Z", "value": 8.7},
+        {"timestamp": "2025-03-08T10:20:00Z", "value": 6.2},
+        {"timestamp": "2025-03-08T10:25:00Z", "value": 3.5},
+        {"timestamp": "2025-03-08T10:30:00Z", "value": 4.8}
+      ]
+    }
+  }
+}
