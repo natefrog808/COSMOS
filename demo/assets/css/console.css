@@ -1,0 +1,600 @@
+/**
+ * console.css - Styles for the terminal console in COSMOS Demo
+ * Creates a realistic terminal interface with syntax highlighting and interactions
+ */
+
+/* Console section */
+.console-section {
+    padding: 4rem 2rem;
+    background-color: var(--dark);
+}
+
+.console-container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+}
+
+/* Main console element */
+.console {
+    background-color: #0F172A;
+    border-radius: var(--border-radius-lg);
+    padding: 1.5rem;
+    font-family: var(--font-mono);
+    box-shadow: var(--shadow-md);
+    position: relative;
+    margin-top: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    overflow: hidden;
+}
+
+/* Console header with window controls */
+.console-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+
+.console-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.console-dot:hover {
+    opacity: 0.8;
+}
+
+.console-dot.red {
+    background-color: #EF4444;
+}
+
+.console-dot.yellow {
+    background-color: #F59E0B;
+}
+
+.console-dot.green {
+    background-color: #10B981;
+}
+
+.console-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: var(--gray);
+    font-size: 0.875rem;
+    pointer-events: none;
+}
+
+/* Console body where output appears */
+.console-body {
+    color: #E2E8F0;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    flex: 1;
+    overflow-y: auto;
+    padding-right: 0.5rem;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}
+
+.console-body::-webkit-scrollbar {
+    width: 6px;
+}
+
+.console-body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.console-body::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+}
+
+.console-body::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Prompt lines in console */
+.console-prompt {
+    display: flex;
+    margin-bottom: 0.5rem;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.console-prompt-symbol {
+    color: var(--success);
+    margin-right: 0.75rem;
+    user-select: none;
+}
+
+/* Response output after prompts */
+.console-response {
+    color: #94A3B8;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+/* Status colors for console messages */
+.console-success {
+    color: var(--success);
+}
+
+.console-error {
+    color: var(--danger);
+}
+
+.console-warning {
+    color: var(--warning);
+}
+
+.console-info {
+    color: var(--info);
+}
+
+.console-highlight {
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.console-muted {
+    color: var(--gray);
+    font-style: italic;
+}
+
+/* Console cursor animation */
+.console-cursor {
+    display: inline-block;
+    width: 0.5rem;
+    height: 1rem;
+    background-color: var(--light);
+    margin-left: 0.25rem;
+    animation: blink 1s step-end infinite;
+    vertical-align: text-bottom;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Console input area */
+.console-input {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1rem;
+}
+
+.console-input-symbol {
+    color: var(--primary);
+    margin-right: 0.75rem;
+    user-select: none;
+}
+
+.console-input input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--light);
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    width: 100%;
+    caret-color: var(--primary);
+}
+
+.console-input input::placeholder {
+    color: var(--gray);
+    opacity: 0.7;
+}
+
+/* Command output styling */
+.command-output {
+    font-family: var(--font-mono);
+    white-space: pre-wrap;
+    margin-bottom: 1rem;
+}
+
+.command-output-line {
+    margin-bottom: 0.25rem;
+}
+
+/* Command suggestions */
+.console-suggestions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.console-suggestion {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.console-suggestion:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Command history navigation indicator */
+.console-history-hint {
+    position: absolute;
+    bottom: calc(100% + 0.5rem);
+    right: 0;
+    font-size: 0.75rem;
+    color: var(--gray);
+    background-color: rgba(15, 23, 42, 0.9);
+    padding: 0.5rem;
+    border-radius: 4px;
+    box-shadow: var(--shadow-sm);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+.console-input:focus-within .console-history-hint {
+    opacity: 1;
+}
+
+/* Command syntax highlighting */
+.cmd-string {
+    color: #10B981; /* Green for strings */
+}
+
+.cmd-flag {
+    color: #3B82F6; /* Blue for flags */
+}
+
+.cmd-param {
+    color: #F59E0B; /* Yellow for parameters */
+}
+
+.cmd-number {
+    color: #EC4899; /* Pink for numbers */
+}
+
+.cmd-command {
+    color: #A78BFA; /* Purple for commands */
+}
+
+.cmd-bool {
+    color: #F43F5E; /* Red for booleans */
+}
+
+.cmd-bracket {
+    color: #E2E8F0; /* White-ish for brackets */
+}
+
+/* Expandable sections in console output */
+.console-expandable {
+    margin-bottom: 0.75rem;
+}
+
+.console-expandable-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.console-expandable-icon {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 6px solid var(--gray);
+    transition: transform 0.3s;
+}
+
+.console-expandable.expanded .console-expandable-icon {
+    transform: rotate(90deg);
+}
+
+.console-expandable-title {
+    font-weight: 500;
+}
+
+.console-expandable-content {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    padding-left: 0.5rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    display: none;
+}
+
+.console-expandable.expanded .console-expandable-content {
+    display: block;
+}
+
+/* Progress indicator in console */
+.console-progress {
+    margin: 0.75rem 0;
+    height: 6px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+}
+
+.console-progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary) 0%, var(--info) 100%);
+    border-radius: 3px;
+    transition: width 0.5s ease;
+}
+
+.console-progress-text {
+    margin-top: 0.25rem;
+    font-size: 0.75rem;
+    color: var(--gray);
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Command help display */
+.command-help {
+    margin: 0.75rem 0 1.25rem;
+    border-left: 2px solid var(--primary);
+    padding-left: 1rem;
+}
+
+.command-help-title {
+    font-weight: 500;
+    color: var(--light);
+    margin-bottom: 0.5rem;
+}
+
+.command-help-description {
+    color: var(--gray);
+    margin-bottom: 0.75rem;
+    font-size: 0.8125rem;
+}
+
+.command-help-list {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.5rem 1rem;
+    font-size: 0.8125rem;
+}
+
+.command-help-param {
+    color: var(--info);
+    font-weight: 500;
+}
+
+.command-help-info {
+    color: var(--gray-light);
+}
+
+/* Console activity indicator */
+.console-activity {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.console-activity-indicator {
+    width: 12px;
+    height: 12px;
+    border: 2px solid var(--primary);
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    animation: console-spin 1s linear infinite;
+}
+
+@keyframes console-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.console-activity-text {
+    color: var(--gray-light);
+    font-size: 0.8125rem;
+}
+
+/* Console resizer */
+.console-resizer {
+    height: 5px;
+    background-color: rgba(255, 255, 255, 0.05);
+    cursor: ns-resize;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+/* Console actions */
+.console-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+}
+
+.console-action {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--gray-light);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.console-action:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: var(--light);
+}
+
+/* Console tabs */
+.console-tabs {
+    display: flex;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.console-tab {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    color: var(--gray);
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+}
+
+.console-tab.active {
+    color: var(--light);
+}
+
+.console-tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary);
+}
+
+.console-tab:hover:not(.active) {
+    color: var(--gray-light);
+}
+
+/* Light mode overrides */
+body.theme-light .console {
+    background-color: #F8FAFC;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+body.theme-light .console-body {
+    color: #334155;
+}
+
+body.theme-light .console-body::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+body.theme-light .console-body::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+body.theme-light .console-response {
+    color: #475569;
+}
+
+body.theme-light .console-prompt-symbol {
+    color: #059669;
+}
+
+body.theme-light .console-input-symbol {
+    color: #6366F1;
+}
+
+body.theme-light .console-input input {
+    color: #1F2937;
+}
+
+body.theme-light .console-title,
+body.theme-light .console-input input::placeholder {
+    color: #64748B;
+}
+
+body.theme-light .console-header,
+body.theme-light .console-input,
+body.theme-light .console-expandable-content {
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+body.theme-light .console-suggestion {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+body.theme-light .console-suggestion:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+body.theme-light .console-history-hint {
+    background-color: rgba(248, 250, 252, 0.9);
+    color: #64748B;
+}
+
+body.theme-light .console-progress {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+body.theme-light .console-expandable-icon {
+    border-left-color: #64748B;
+}
+
+body.theme-light .console-tabs {
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+body.theme-light .console-resizer {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+body.theme-light .console-action {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: #64748B;
+}
+
+body.theme-light .console-action:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #334155;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+    .console {
+        height: 400px;
+    }
+    
+    .console-actions {
+        top: 1rem;
+        right: 1rem;
+    }
+    
+    .console-tabs {
+        overflow-x: auto;
+        white-space: nowrap;
+        scrollbar-width: none;
+    }
+    
+    .console-tabs::-webkit-scrollbar {
+        display: none;
+    }
+}
