@@ -1,3 +1,4 @@
+~~~
 cosmos/
 ├── demo/
 │   ├── index.html                   # The main HTML demo file you already have
@@ -53,3 +54,4 @@ cosmos/
 │       ├── detection-metrics.json         # Sample element detection metrics
 │       └── code-examples.json             # Code examples for the demo tabs
 └── ...
+~~~
