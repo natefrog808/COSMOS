@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <!-- Background Color -->
+  <rect width="1200" height="800" fill="#F3F4F6" />
+  
+  <!-- Application Window -->
+  <rect x="50" y="50" width="1100" height="700" rx="10" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1" />
+  
+  <!-- Window Header -->
+  <rect x="50" y="50" width="1100" height="40" rx="10" fill="#1F2937" />
+  <circle cx="80" cy="70" r="7" fill="#EF4444" />
+  <circle cx="105" cy="70" r="7" fill="#F59E0B" />
+  <circle cx="130" cy="70" r="7" fill="#10B981" />
+  <text x="600" y="75" font-family="Arial" font-size="14" fill="#FFFFFF" text-anchor="middle">Customer Registration Form - COSMOS Automation</text>
+  
+  <!-- Sidebar -->
+  <rect x="50" y="90" width="250" height="660" fill="#F9FAFB" />
+  <text x="70" y="130" font-family="Arial" font-size="18" font-weight="bold" fill="#111827">Automation Tasks</text>
+  
+  <!-- Sidebar Tasks -->
+  <rect x="70" y="160" width="210" height="50" rx="5" fill="#6C63FF" />
+  <text x="90" y="190" font-family="Arial" font-size="14" fill="#FFFFFF">• Form Filling</text>
+  
+  <rect x="70" y="220" width="210" height="50" rx="5" fill="#F3F4F6" />
+  <text x="90" y="250" font-family="Arial" font-size="14" fill="#6B7280">• Data Extraction</text>
+  
+  <rect x="70" y="280" width="210" height="50" rx="5" fill="#F3F4F6" />
+  <text x="90" y="310" font-family="Arial" font-size="14" fill="#6B7280">• Form Submission</text>
+  
+  <rect x="70" y="340" width="210" height="50" rx="5" fill="#F3F4F6" />
+  <text x="90" y="370" font-family="Arial" font-size="14" fill="#6B7280">• Validation</text>
+  
+  <!-- Form Content -->
+  <rect x="350" y="120" width="750" height="600" rx="5" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1" />
+  <text x="380" y="160" font-family="Arial" font-size="22" font-weight="bold" fill="#111827">Customer Registration</text>
+  <text x="380" y="190" font-family="Arial" font-size="14" fill="#6B7280">Please fill out all required fields to register a new customer.</text>
+  
+  <!-- Form Fields -->
+  <!-- Personal Information Section -->
+  <text x="380" y="240" font-family="Arial" font-size="16" font-weight="bold" fill="#374151">Personal Information</text>
+  <line x1="380" y1="250" x2="1050" y2="250" stroke="#E5E7EB" stroke-width="1" />
+  
+  <!-- First Name - showing automation in progress -->
+  <text x="380" y="290" font-family="Arial" font-size="14" fill="#374151">First Name *</text>
+  <rect x="380" y="300" width="300" height="40" rx="5" fill="#FFFFFF" stroke="#6C63FF" stroke-width="2" />
+  <text x="395" y="325" font-family="Arial" font-size="14" fill="#111827">John</text>
+  
+  <!-- Cursor indicating active typing -->
+  <rect x="430" y="315" width="2" height="20" fill="#6C63FF">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" />
+  </rect>
+  
+  <!-- Mouse cursor pointing to the field -->
+  <path d="M340,320 L355,305 L355,315 L365,315 L340,335" fill="#6C63FF" />
+  
+  <!-- Automation Indicator -->
+  <circle cx="695" cy="320" r="10" fill="#10B981" />
+  <text x="693" cy="325" font-family="Arial" font-size="14" fill="#FFFFFF" font-weight="bold">✓</text>
+  
+  <!-- Last Name -->
+  <text x="700" y="290" font-family="Arial" font-size="14" fill="#374151">Last Name *</text>
+  <rect x="700" y="300" width="300" height="40" rx="5" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1" />
+  
+  <!-- Email -->
+  <text x="380" y="370" font-family="Arial" font-size="14" fill="#374151">Email Address *</text>
+  <rect x="380" y="380" width="300" height="40" rx="5" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1" />
+  
+  <!-- Phone -->
+  <text x="700" y="370" font-family="Arial" font-size="14" fill="#374151">Phone Number</text>
+  <rect x="700" y="380" width="300" height="40" rx="5" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1" />
+  
+  <!-- Address Section -->
+  <text x="380" y="450" font-family="Arial" font-size="16" font-weight="bold" fill="#374151">Address</text>
+  <line x1="380" y1="460" x2="1050" y2="460" stroke="#E5E7EB" stroke-width="1" />
+  
+  <!-- Street Address -->
+  <text x="380" y="500" font-family="Arial" font-size="14" fill="#374151">Street Address *</text>
+  <rect x="380" y="510" width="620" height="40" rx="5" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1" />
+  
+  <!-- City and State in one row -->
+  <text x="380" y="580" font-family="Arial" font-size="14" fill="#374151">City *</text>
+  <rect x="380" y="590" width="300" height="40" rx="5" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1" />
+  
+  <text x="700" y="580" font-family="Arial" font-size="14" fill="#374151">State/Province *</text>
+  <rect x="700" y="590" width="150" height="40" rx="5" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1" />
+  
+  <!-- Zip Code -->
+  <text x="870" y="580" font-family="Arial" font-size="14" fill="#374151">Zip/Postal Code *</text>
+  <rect x="870" y="590" width="130" height="40" rx="5" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1" />
+  
+  <!-- Buttons -->
+  <rect x="380" y="650" width="120" height="45" rx="5" fill="#6C63FF" />
+  <text x="440" y="678" font-family="Arial" font-size="14" fill="#FFFFFF" text-anchor="middle" font-weight="bold">Submit</text>
+  
+  <rect x="520" y="650" width="120" height="45" rx="5" fill="#FFFFFF" stroke="#6B7280" stroke-width="1" />
+  <text x="580" y="678" font-family="Arial" font-size="14" fill="#6B7280" text-anchor="middle">Cancel</text>
+  
+  <!-- COSMOS Automation Overlay -->
+  <rect x="900" y="120" width="200" height="200" rx="10" fill="#1F2937" opacity="0.9" />
+  <text x="920" y="150" font-family="Arial" font-size="16" fill="#FFFFFF" font-weight="bold">COSMOS Automation</text>
+  <line x1="920" y1="160" x2="1080" y2="160" stroke="#6C63FF" stroke-width="2" />
+  
+  <text x="920" y="190" font-family="Arial" font-size="12" fill="#E5E7EB">Action: Form Filling</text>
+  <text x="920" y="220" font-family="Arial" font-size="12" fill="#E5E7EB">Field: First Name</text>
+  <text x="920" y="250" font-family="Arial" font-size="12" fill="#E5E7EB">Value: "John"</text>
+  <text x="920" y="280" font-family="Arial" font-size="12" fill="#10B981">Status: In Progress</text>
+  
+  <!-- Progress Bar -->
+  <rect x="920" y="300" width="160" height="8" rx="4" fill="#4B5563" />
+  <rect x="920" y="300" width="40" height="8" rx="4" fill="#6C63FF">
+    <animate attributeName="width" values="40;80;120" dur="3s" repeatCount="indefinite" />
+  </rect>
+  
+</svg>
