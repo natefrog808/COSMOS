@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="64" height="64">
+  <defs>
+    <linearGradient id="aiGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6C63FF" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+  </defs>
+  <!-- Background circle -->
+  <circle cx="12" cy="12" r="11" fill="rgba(108, 99, 255, 0.1)" />
+  
+  <!-- Brain outline -->
+  <path d="M12,4 C7,4 4,8 4,12 C4,16 7,20 12,20 C17,20 20,16 20,12 C20,8 17,4 12,4 Z" fill="none" stroke="url(#aiGradient)" stroke-width="1.5" opacity="0.7" />
+  
+  <!-- Neural network connections -->
+  <circle cx="8" cy="8" r="1.5" fill="url(#aiGradient)" />
+  <circle cx="16" cy="8" r="1.5" fill="url(#aiGradient)" />
+  <circle cx="12" cy="10" r="1.5" fill="url(#aiGradient)" />
+  <circle cx="8" cy="14" r="1.5" fill="url(#aiGradient)" />
+  <circle cx="16" cy="14" r="1.5" fill="url(#aiGradient)" />
+  <circle cx="12" cy="16" r="1.5" fill="url(#aiGradient)" />
+  
+  <!-- Network connections -->
+  <line x1="8" y1="8" x2="12" y2="10" stroke="url(#aiGradient)" stroke-width="1" />
+  <line x1="16" y1="8" x2="12" y2="10" stroke="url(#aiGradient)" stroke-width="1" />
+  <line x1="8" y1="14" x2="12" y2="10" stroke="url(#aiGradient)" stroke-width="1" />
+  <line x1="16" y1="14" x2="12" y2="10" stroke="url(#aiGradient)" stroke-width="1" />
+  <line x1="8" y1="14" x2="12" y2="16" stroke="url(#aiGradient)" stroke-width="1" />
+  <line x1="16" y1="14" x2="12" y2="16" stroke="url(#aiGradient)" stroke-width="1" />
+  
+  <!-- Pulsing animation for active thinking -->
+  <circle cx="12" cy="10" r="3" fill="url(#aiGradient)" opacity="0.3">
+    <animate attributeName="r" values="3;5;3" dur="2s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.3;0.1;0.3" dur="2s" repeatCount="indefinite" />
+  </circle>
+</svg>
