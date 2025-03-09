@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="64" height="64">
+  <defs>
+    <linearGradient id="visionGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6C63FF" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+  </defs>
+  <!-- Background circle -->
+  <circle cx="12" cy="12" r="11" fill="rgba(108, 99, 255, 0.1)" />
+  
+  <!-- Eye outer -->
+  <ellipse cx="12" cy="12" rx="8" ry="6" fill="none" stroke="url(#visionGradient)" stroke-width="1.5" />
+  
+  <!-- Iris -->
+  <circle cx="12" cy="12" r="3.5" fill="none" stroke="url(#visionGradient)" stroke-width="1.5" />
+  
+  <!-- Pupil -->
+  <circle cx="12" cy="12" r="1.75" fill="url(#visionGradient)" />
+  
+  <!-- Scanning lines -->
+  <path d="M1,12 h4" stroke="url(#visionGradient)" stroke-width="1.5" opacity="0.7" />
+  <path d="M19,12 h4" stroke="url(#visionGradient)" stroke-width="1.5" opacity="0.7" />
+  <path d="M12,1 v4" stroke="url(#visionGradient)" stroke-width="1.5" opacity="0.7" />
+  <path d="M12,19 v4" stroke="url(#visionGradient)" stroke-width="1.5" opacity="0.7" />
+  
+  <!-- Grid elements suggesting computer vision -->
+  <rect x="2" y="2" width="2" height="2" rx="0.5" fill="url(#visionGradient)" opacity="0.5" />
+  <rect x="20" y="2" width="2" height="2" rx="0.5" fill="url(#visionGradient)" opacity="0.5" />
+  <rect x="2" y="20" width="2" height="2" rx="0.5" fill="url(#visionGradient)" opacity="0.5" />
+  <rect x="20" y="20" width="2" height="2" rx="0.5" fill="url(#visionGradient)" opacity="0.5" />
+</svg>
