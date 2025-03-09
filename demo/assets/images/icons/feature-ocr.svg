@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="64" height="64">
+  <defs>
+    <linearGradient id="ocrGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6C63FF" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+  </defs>
+  <!-- Background circle -->
+  <circle cx="12" cy="12" r="11" fill="rgba(108, 99, 255, 0.1)" />
+  
+  <!-- Text Recognition Elements -->
+  <!-- Letter A -->
+  <path d="M6,18 L8.5,6 L11,18 M7,14 L10,14" fill="none" stroke="url(#ocrGradient)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- Letter B -->
+  <path d="M13,6 L13,18 M13,6 C16,6 17,7 17,9 C17,11 16,12 13,12 M13,12 C16.5,12 18,13 18,15 C18,17 16.5,18 13,18" fill="none" stroke="url(#ocrGradient)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- Scanning Indicator Lines -->
+  <line x1="4" y1="20" x2="20" y2="20" stroke="url(#ocrGradient)" stroke-width="1" stroke-dasharray="1,1" />
+  <line x1="4" y1="4" x2="20" y2="4" stroke="url(#ocrGradient)" stroke-width="1" stroke-dasharray="1,1" />
+  
+  <!-- Scanning Highlight -->
+  <rect x="3" y="11" width="18" height="0.5" fill="url(#ocrGradient)" opacity="0.7">
+    <animate attributeName="y" from="6" to="18" dur="2s" repeatCount="indefinite" />
+  </rect>
+  
+  <!-- Corner Markers -->
+  <path d="M4,8 L4,6 L6,6" fill="none" stroke="url(#ocrGradient)" stroke-width="1.5" />
+  <path d="M18,6 L20,6 L20,8" fill="none" stroke="url(#ocrGradient)" stroke-width="1.5" />
+  <path d="M4,16 L4,18 L6,18" fill="none" stroke="url(#ocrGradient)" stroke-width="1.5" />
+  <path d="M18,18 L20,18 L20,16" fill="none" stroke="url(#ocrGradient)" stroke-width="1.5" />
+</svg>
