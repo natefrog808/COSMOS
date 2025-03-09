@@ -48,7 +48,23 @@ Whether you're a developer seeking to automate repetitive tasks, a creative prof
 - **Execution Validation**: Confirms critical actions before proceeding
 
 ---
-
+# Directory
+~~~
+cosmos/
+├── package.json               # Dependencies and scripts
+├── .env                       # Environment variables (ANTHROPIC_API_KEY)
+├── README.md                  # The comprehensive README we created
+├── src/
+│   ├── index.js               # Main entry point
+│   ├── actions/
+│   │   └── index.js           # All automation actions (created)
+│   ├── context/
+│   │   └── automationContext.js # Context definition (created)
+│   └── utils/                 # Utility functions (would contain OCR, vision helpers)
+└── examples/
+    └── form-automation.js     # Form automation example (created)
+~~~
+---
 ## 🛠️ Technical Architecture
 
 COSMOS is built on a React-inspired architecture using the Daydreams framework, featuring:
