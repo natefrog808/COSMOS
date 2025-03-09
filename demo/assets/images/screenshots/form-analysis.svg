@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <!-- Background Color -->
+  <rect width="1200" height="800" fill="#F3F4F6" />
+  
+  <!-- Main Application Window -->
+  <rect x="50" y="50" width="1100" height="700" rx="10" fill="#1F2937" stroke="#111827" stroke-width="1" />
+  
+  <!-- Window Header -->
+  <rect x="50" y="50" width="1100" height="40" rx="10" fill="#111827" />
+  <circle cx="80" cy="70" r="7" fill="#EF4444" />
+  <circle cx="105" cy="70" r="7" fill="#F59E0B" />
+  <circle cx="130" cy="70" r="7" fill="#10B981" />
+  <text x="600" y="75" font-family="Arial" font-size="14" fill="#FFFFFF" text-anchor="middle">COSMOS - UI Element Analysis</text>
+  
+  <!-- Left Sidebar - Element Detection -->
+  <rect x="50" y="90" width="250" height="660" fill="#292F3F" />
+  <text x="70" y="130" font-family="Arial" font-size="18" font-weight="bold" fill="#FFFFFF">Detection Results</text>
+  
+  <!-- Element List -->
+  <rect x="70" y="160" width="210" height="40" rx="5" fill="#3B82F6" opacity="0.2" />
+  <text x="90" y="185" font-family="Arial" font-size="14" fill="#3B82F6">First Name (text field)</text>
+  
+  <rect x="70" y="210" width="210" height="40" rx="5" fill="#6C63FF" opacity="0.2" />
+  <text x="90" y="235" font-family="Arial" font-size="14" fill="#6C63FF">Last Name (text field)</text>
+  
+  <rect x="70" y="260" width="210" height="40" rx="5" fill="#8B5CF6" opacity="0.2" />
+  <text x="90" y="285" font-family="Arial" font-size="14" fill="#8B5CF6">Email (text field)</text>
+  
+  <rect x="70" y="310" width="210" height="40" rx="5" fill="#EC4899" opacity="0.2" />
+  <text x="90" y="335" font-family="Arial" font-size="14" fill="#EC4899">Phone (text field)</text>
+  
+  <rect x="70" y="360" width="210" height="40" rx="5" fill="#10B981" opacity="0.2" />
+  <text x="90" y="385" font-family="Arial" font-size="14" fill="#10B981">Street Address (text field)</text>
+  
+  <rect x="70" y="410" width="210" height="40" rx="5" fill="#F59E0B" opacity="0.2" />
+  <text x="90" y="435" font-family="Arial" font-size="14" fill="#F59E0B">Submit (button)</text>
+  
+  <rect x="70" y="460" width="210" height="40" rx="5" fill="#EF4444" opacity="0.2" />
+  <text x="90" y="485" font-family="Arial" font-size="14" fill="#EF4444">Cancel (button)</text>
+  
+  <text x="70" y="540" font-family="Arial" font-size="16" font-weight="bold" fill="#FFFFFF">Element Statistics</text>
+  <text x="90" y="570" font-family="Arial" font-size="14" fill="#E5E7EB">• 7 text fields</text>
+  <text x="90" y="600" font-family="Arial" font-size="14" fill="#E5E7EB">• 2 buttons</text>
+  <text x="90" y="630" font-family="Arial" font-size="14" fill="#E5E7EB">• 1 form element</text>
+  <text x="90" y="660" font-family="Arial" font-size="14" fill="#E5E7EB">• 9 labels</text>
+  
+  <!-- Main Content Area with Form (Grayscale for analysis) -->
+  <rect x="350" y="120" width="750" height="500" rx="5" fill="#FFFFFF" opacity="0.9" />
+  
+  <!-- Form Title -->
+  <text x="380" y="160" font-family="Arial" font-size="22" font-weight="bold" fill="#111827">Customer Registration</text>
+  <text x="380" y="190" font-family="Arial" font-size="14" fill="#6B7280">Please fill out all required fields to register a new customer.</text>
+  
+  <!-- Personal Information Section -->
+  <text x="380" y="240" font-family="Arial" font-size="16" font-weight="bold" fill="#374151">Personal Information</text>
+  <line x1="380" y1="250" x2="1050" y2="250" stroke="#E5E7EB" stroke-width="1" />
+  
+  <!-- First Name field with highlight overlay -->
+  <text x="380" y="290" font-family="Arial" font-size="14" fill="#374151">First Name *</text>
+  <rect x="380" y="300" width="300" height="40" rx="5" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1" />
+  <rect x="380" y="300" width="300" height="40" rx="5" fill="#3B82F6" opacity="0.3" stroke="#3B82F6" stroke-width="2" stroke-dasharray="4" />
+  <text x="385" y="280" font-family="Arial" font-size="12" fill="#3B82F6" font-weight="bold">Element ID: text-field-001</text>
+  
+  <!-- Last Name field with highlight overlay -->
+  <text x="700" y="290" font-family="Arial" font-size="14" fill="#374151">Last Name *</text>
+  <rect x="700" y="300" width="300" height="40" rx="5" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1" />
+  <rect x="700" y="300" width="300" height="40" rx="5" fill="#6C63FF" opacity="0.3" stroke="#6C63FF" stroke-width="2" stroke-dasharray="4" />
+  <text x="705" y="280" font-family="Arial" font-size="12" fill="#6C63FF" font-weight="bold">Element ID: text-field-002</text>
+  
+  <!-- Email field with highlight overlay -->
+  <text x="380" y="370" font-family="Arial" font-size="14" fill="#374151">Email Address *</text>
+  <rect x="380" y="380" width="300" height="40" rx="5" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1" />
+  <rect x="380" y="380" width="300" height="40" rx="5" fill="#8B5CF6" opacity="0.3" stroke="#8B5CF6" stroke-width="2" stroke-dasharray="4" />
+  <text x="385" y="360" font-family="Arial" font-size="12" fill="#8B5CF6" font-weight="bold">Element ID: text-field-003</text>
+  
+  <!-- Phone field with highlight overlay -->
+  <text x="700" y="370" font-family="Arial" font-size="14" fill="#374151">Phone Number</text>
+  <rect x="700" y="380" width="300" height="40" rx="5" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1" />
+  <rect x="700" y="380" width="300" height="40" rx="5" fill="#EC4899" opacity="0.3" stroke="#EC4899" stroke-width="2" stroke-dasharray="4" />
+  <text x="705" y="360" font-family="Arial" font-size="12" fill="#EC4899" font-weight="bold">Element ID: text-field-004</text>
+  
+  <!-- Address Section -->
+  <text x="380" y="450" font-family="Arial" font-size="16" font-weight="bold" fill="#374151">Address</text>
+  <line x1="380" y1="460" x2="1050" y2="460" stroke="#E5E7EB" stroke-width="1" />
+  
+  <!-- Street Address with highlight overlay -->
+  <text x="380" y="500" font-family="Arial" font-size="14" fill="#374151">Street Address *</text>
+  <rect x="380" y="510" width="620" height="40" rx="5" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1" />
+  <rect x="380" y="510" width="620" height="40" rx="5" fill="#10B981" opacity="0.3" stroke="#10B981" stroke-width="2" stroke-dasharray="4" />
+  <text x="385" y="490" font-family="Arial" font-size="12" fill="#10B981" font-weight="bold">Element ID: text-field-005</text>
+  
+  <!-- Buttons with highlight overlay -->
+  <rect x="380" y="570" width="120" height="45" rx="5" fill="#6C63FF" />
+  <text x="440" y="598" font-family="Arial" font-size="14" fill="#FFFFFF" text-anchor="middle" font-weight="bold">Submit</text>
+  <rect x="380" y="570" width="120" height="45" rx="5" fill="#F59E0B" opacity="0.3" stroke="#F59E0B" stroke-width="2" stroke-dasharray="4" />
+  <text x="385" y="560" font-family="Arial" font-size="12" fill="#F59E0B" font-weight="bold">Element ID: button-001</text>
+  
+  <rect x="520" y="570" width="120" height="45" rx="5" fill="#FFFFFF" stroke="#6B7280" stroke-width="1" />
+  <text x="580" y="598" font-family="Arial" font-size="14" fill="#6B7280" text-anchor="middle">Cancel</text>
+  <rect x="520" y="570" width="120" height="45" rx="5" fill="#EF4444" opacity="0.3" stroke="#EF4444" stroke-width="2" stroke-dasharray="4" />
+  <text x="525" y="560" font-family="Arial" font-size="12" fill="#EF4444" font-weight="bold">Element ID: button-002</text>
+  
+  <!-- Analysis Panel -->
+  <rect x="350" y="640" width="750" height="110" rx="5" fill="#292F3F" />
+  <text x="380" y="670" font-family="Arial" font-size="16" font-weight="bold" fill="#FFFFFF">Element Analysis Results</text>
+  <text x="380" y="700" font-family="Arial" font-size="14" fill="#E5E7EB">• Form structure detected with 96.7% confidence</text>
+  <text x="380" y="730" font-family="Arial" font-size="14" fill="#E5E7EB">• All required fields identified (marked with * in labels)</text>
+  
+  <!-- Analysis Metrics Panel -->
+  <rect x="950" y="350" width="150" height="270" rx="10" fill="#292F3F" opacity="0.9" />
+  <text x="970" y="380" font-family="Arial" font-size="14" fill="#FFFFFF" font-weight="bold">Analysis Metrics</text>
+  <line x1="970" y1="390" x2="1080" y2="390" stroke="#6C63FF" stroke-width="2" />
+  
+  <text x="970" y="420" font-family="Arial" font-size="12" fill="#E5E7EB">Detection Speed:</text>
+  <text x="970" y="440" font-family="Arial" font-size="12" fill="#10B981">213 ms</text>
+  
+  <text x="970" y="470" font-family="Arial" font-size="12" fill="#E5E7EB">Elements Found:</text>
+  <text x="970" y="490" font-family="Arial" font-size="12" fill="#10B981">19 elements</text>
+  
+  <text x="970" y="520" font-family="Arial" font-size="12" fill="#E5E7EB">Confidence:</text>
+  <text x="970" y="540" font-family="Arial" font-size="12" fill="#10B981">96.7%</text>
+  
+  <text x="970" y="570" font-family="Arial" font-size="12" fill="#E5E7EB">Form Structure:</text>
+  <text x="970" y="590" font-family="Arial" font-size="12" fill="#10B981">Verified ✓</text>
+  
+  <!-- Detection visualization outlines -->
+  <rect x="350" y="120" width="750" height="500" rx="5" fill="none" stroke="#6C63FF" stroke-width="1" stroke-dasharray="5,5" />
+  
+  <!-- Connected lines showing element relationships -->
+  <line x1="380" y1="290" x2="380" y2="300" stroke="#3B82F6" stroke-width="1" />
+  <line x1="700" y1="290" x2="700" y2="300" stroke="#6C63FF" stroke-width="1" />
+  <line x1="380" y1="370" x2="380" y2="380" stroke="#8B5CF6" stroke-width="1" />
+  <line x1="700" y1="370" x2="700" y2="380" stroke="#EC4899" stroke-width="1" />
+  <line x1="380" y1="500" x2="380" y2="510" stroke="#10B981" stroke-width="1" />
+  
+</svg>
