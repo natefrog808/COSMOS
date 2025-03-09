@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="64" height="64">
+  <defs>
+    <linearGradient id="inputGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6C63FF" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+  </defs>
+  <!-- Background circle -->
+  <circle cx="12" cy="12" r="11" fill="rgba(108, 99, 255, 0.1)" />
+  
+  <!-- Mouse body -->
+  <path d="M12,5 C9.2,5 7,7.2 7,10 L7,14 C7,16.8 9.2,19 12,19 C14.8,19 17,16.8 17,14 L17,10 C17,7.2 14.8,5 12,5 Z" fill="none" stroke="url(#inputGradient)" stroke-width="1.5" />
+  
+  <!-- Mouse button divider -->
+  <path d="M12,5 L12,12" stroke="url(#inputGradient)" stroke-width="1.5" opacity="0.7" />
+  
+  <!-- Mouse wheel -->
+  <circle cx="12" cy="9" r="1" fill="url(#inputGradient)" />
+  
+  <!-- Mouse cable -->
+  <path d="M12,19 C12,19 12,21 12,22" stroke="url(#inputGradient)" stroke-width="1.5" />
+  
+  <!-- Keyboard keys -->
+  <rect x="5" y="13" width="2" height="2" rx="0.5" fill="url(#inputGradient)" opacity="0.6" />
+  <rect x="8" y="13" width="2" height="2" rx="0.5" fill="url(#inputGradient)" opacity="0.7" />
+  <rect x="11" y="13" width="2" height="2" rx="0.5" fill="url(#inputGradient)" opacity="0.8" />
+  <rect x="14" y="13" width="2" height="2" rx="0.5" fill="url(#inputGradient)" opacity="0.9" />
+  <rect x="17" y="13" width="2" height="2" rx="0.5" fill="url(#inputGradient)" />
+  
+  <!-- Mouse cursor -->
+  <path d="M20,4 L17,9 L19,9 L16,14" fill="none" stroke="url(#inputGradient)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
