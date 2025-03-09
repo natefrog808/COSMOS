@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cosmos Icon - Orbital System Design -->
+  <g id="cosmos-icon">
+    <!-- Main outer circle -->
+    <circle cx="25" cy="25" r="20" stroke="#6C63FF" stroke-width="2.5" fill="none"/>
+    
+    <!-- Inner circle -->
+    <circle cx="25" cy="25" r="10" stroke="#6C63FF" stroke-width="2" fill="none"/>
+    
+    <!-- Center point -->
+    <circle cx="25" cy="25" r="3" fill="#6C63FF"/>
+    
+    <!-- Orbital elements (planets) -->
+    <circle cx="25" cy="5" r="4" fill="#3B82F6"/> <!-- Top planet -->
+    <circle cx="25" cy="45" r="2.5" fill="#10B981"/> <!-- Bottom planet -->
+    <circle cx="45" cy="25" r="3.5" fill="#F59E0B"/> <!-- Right planet -->
+    
+    <!-- Orbital ring (elliptical) -->
+    <ellipse cx="25" cy="25" rx="22" ry="15" transform="rotate(45 25 25)" stroke="#6C63FF" stroke-width="1.5" stroke-dasharray="3 2" fill="none"/>
+  </g>
+</svg>
